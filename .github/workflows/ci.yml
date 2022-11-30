@@ -37,7 +37,7 @@ jobs:
           CF_RUNTIME_NAME: 'codefresh-hosted'
           CF_IMAGE: ${{env.CF_IMAGE}}
           CF_CONTAINER_REGISTRY_INTEGRATION: 'docker'
-          CF_GIT_BRANCH: git branch [${{ github.event.pull_request.head.ref }}]
+          CF_GIT_BRANCH: master
           CF_ISSUE_TRACKING_INTEGRATION: 'jira'
           CF_JIRA_PROJECT_PREFIX: 'CR'
           CF_JIRA_MESSAGE: jira msg [${{ github.event.pull_request.head.ref }}]
