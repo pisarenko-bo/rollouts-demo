@@ -33,6 +33,8 @@ jobs:
       
       - name: report image
         with:
+          CF_PLATFORM_URL: https://bohdan-pisarenko-platform.ngrok.io
+          #CF_PLATFORM_URL: https://g.codefresh.io
           CF_API_KEY: ${{secrets.CF_API_KEY}}
           CF_RUNTIME_NAME: 'codefresh-hosted'
           CF_IMAGE: ${{env.CF_IMAGE}}
